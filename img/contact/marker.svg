@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="52" viewBox="0 0 35 52">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2f9042;
+        stroke-linejoin: round;
+        stroke-width: 1px;
+        fill-rule: evenodd;
+        stroke: url(#linear-gradient);
+        filter: url(#filter);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="422.875" y1="551.938" x2="422.875" y2="504" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#296935"/>
+      <stop offset="1" stop-color="#296935"/>
+    </linearGradient>
+    <filter id="filter" x="406" y="504" width="34" height="51" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dy="1" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="1"/>
+      <feFlood result="flood" flood-opacity="0.2"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+      <feImage preserveAspectRatio="none" x="2.437999999999988" y="0.5" width="29.875" height="47.938" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjkuODc1IiBoZWlnaHQ9IjQ3LjkzOCIgdmlld0JveD0iMCAwIDI5Ljg3NSA0Ny45MzgiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIG9wYWNpdHk6IDAuNDsKICAgICAgICBmaWxsOiB1cmwoI2xpbmVhci1ncmFkaWVudCk7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImxpbmVhci1ncmFkaWVudCIgeDE9IjE0LjkzOCIgeTE9IjQ3LjkzOCIgeDI9IjE0LjkzOCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9Ii0wLjI1Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMS4yNSIgc3RvcC1jb2xvcj0iI2ZmZiIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iMjkuODc1IiBoZWlnaHQ9IjQ3LjkzOCIvPgo8L3N2Zz4K"/>
+      <feComposite result="composite-2" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend-2" mode="overlay" in2="blend"/>
+      <feGaussianBlur result="blur-2" stdDeviation="4" in="SourceAlpha"/>
+      <feFlood result="flood-2" flood-color="#2da74a" flood-opacity="0.2"/>
+      <feComposite result="composite-4" operator="out" in2="blur-2"/>
+      <feComposite result="composite-3" operator="in" in2="SourceAlpha"/>
+      <feBlend result="blend-3" in2="blend-2"/>
+      <feGaussianBlur result="blur-3" in="SourceAlpha"/>
+      <feFlood result="flood-3" flood-color="#fff" flood-opacity="0.25"/>
+      <feComposite result="composite-5" operator="out" in2="blur-3"/>
+      <feOffset result="offset-2" dy="2"/>
+      <feComposite result="composite-6" operator="in" in2="SourceAlpha"/>
+      <feBlend result="blend-4" in2="blend-3"/>
+    </filter>
+  </defs>
+  <g style="fill: #2f9042; filter: url(#filter)">
+    <path id="marker2.svg" class="cls-1" d="M422.875,504a14.938,14.938,0,0,1,14.938,14.938c0,8.249-13.782,33-14.938,33-0.937,0-14.938-24.754-14.938-33A14.938,14.938,0,0,1,422.875,504Zm0.078,9.08a5.016,5.016,0,1,1-5.015,5.016A5.016,5.016,0,0,1,422.953,513.08Z" transform="translate(-405.5 -503.5)" style="stroke: inherit; filter: none; fill: inherit"/>
+  </g>
+  <use xlink:href="#marker2.svg" style="stroke: url(#linear-gradient); filter: none; fill: none"/>
+</svg>

@@ -1,0 +1,26 @@
+<svg id="logo.svg" xmlns="http://www.w3.org/2000/svg" width="163" height="50" viewBox="0 0 163 50">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 24px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #737373;
+      }
+
+      .cls-1, .cls-3 {
+        font-family: Novecentowide;
+        font-weight: 600;
+      }
+
+      .cls-3 {
+        font-size: 36px;
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <text id="Display" class="cls-1" x="61.999" y="34">Display</text>
+  <rect id="container" class="cls-2" width="50" height="50"/>
+  <text id="D" class="cls-3" x="11" y="38">D</text>
+</svg>
