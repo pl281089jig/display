@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="css/normalize.css" />
 	<link rel="stylesheet" href="css/layout.css" />
 	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/swipebox.css">
 	<link rel="stylesheet" href="css/slick.css">
 
 	<!--[if lt IE 9]>
@@ -96,7 +97,7 @@
 					<ul class="ba-menu">
 						<li><a href="index.html">home</a></li>
 						<li><a href="about.html">about</a></li>
-						<li><a href="work.html">work</a></li>
+						<li><a href="work.html" class="active">work</a></li>
 						<li><a href="contact.html">contact</a></li>
 					</ul>
 				</div>
@@ -110,88 +111,104 @@
 			</section>
 			<section class="ba-work">
 				<div class="ba-container">
-					<div id="options" class="ba-work-filter">
-						<div id="filters" class="button-group js-radio-button-group">
+						<div class="button-group">
 							<button class="button is-checked" data-filter="*">All</button>
 							<button class="button" data-filter=".print">Print</button>
 							<button class="button" data-filter=".photography">Photography</button>
 							<button class="button" data-filter=".web">Web</button>
 							<button class="button" data-filter=".applications">Applications</button>
 						</div>
-					</div>
-					<div class="ba-work-filter__img isotope">
-						<a href="img/work/big_img1.jpg" class="item web">
-							<img src="img/link/img1.jpg" alt="img1">
-							<div class="ba-work-overlay">
-								<div class="ba-work-overlay--middle">
-									<img src="img/work/link.png" alt="link">
+					<div class="ba-work-filter__img cf">
+						<div class="ba-work-item web">
+							<a href="img/work/big_img1.jpg" class="swipebox">
+								<img src="img/link/img1.jpg" alt="img1">
+								<div class="ba-work-overlay">
+									<div class="ba-work-overlay--middle">
+										<img src="img/work/link.png" alt="link">
+									</div>
 								</div>
-							</div>
-						</a>
-						<a href="img/work/big_img2.jpg" class="item print">
-							<img src="img/link/img2.jpg" alt="img2">
-							<div class="ba-work-overlay">
-								<div class="ba-work-overlay--middle">
-									<img src="img/work/link.png" alt="link">
+							</a>
+						</div>
+						<div class="ba-work-item print">
+							<a href="img/work/big_img2.jpg" class="swipebox">
+								<img src="img/link/img2.jpg" alt="img2">
+								<div class="ba-work-overlay">
+									<div class="ba-work-overlay--middle">
+										<img src="img/work/link.png" alt="link">
+									</div>
 								</div>
-							</div>
-						</a>
-						<a href="img/work/big_img3.jpg" class="item photography">
-							<img src="img/link/img3.jpg" alt="img3">
-							<div class="ba-work-overlay">
-								<div class="ba-work-overlay--middle">
-									<img src="img/work/link.png" alt="link">
+							</a>
+						</div>
+						<div class="ba-work-item photography">
+							<a href="img/work/big_img3.jpg" class="swipebox">
+								<img src="img/link/img3.jpg" alt="img3">
+								<div class="ba-work-overlay">
+									<div class="ba-work-overlay--middle">
+										<img src="img/work/link.png" alt="link">
+									</div>
 								</div>
-							</div>
-						</a>
-						<a href="img/work/big_img4.jpg" class="item photography">
-							<img src="img/link/img4.jpg" alt="img4">
-							<div class="ba-work-overlay">
-								<div class="ba-work-overlay--middle">
-									<img src="img/work/link.png" alt="link">
+							</a>
+						</div>
+						<div class="ba-work-item photography">
+							<a href="img/work/big_img4.jpg" class="swipebox">
+								<img src="img/link/img4.jpg" alt="img4">
+								<div class="ba-work-overlay">
+									<div class="ba-work-overlay--middle">
+										<img src="img/work/link.png" alt="link">
+									</div>
 								</div>
-							</div>
-						</a>
-						<a href="img/work/big_img5.jpg" class="item print web">
-							<img src="img/link/img5.jpg" alt="img5">
-							<div class="ba-work-overlay">
-								<div class="ba-work-overlay--middle">
-									<img src="img/work/link.png" alt="link">
+							</a>
+						</div>
+						<div class="ba-work-item print web">
+							<a href="img/work/big_img5.jpg" class="swipebox">
+								<img src="img/link/img5.jpg" alt="img5">
+								<div class="ba-work-overlay">
+									<div class="ba-work-overlay--middle">
+										<img src="img/work/link.png" alt="link">
+									</div>
 								</div>
-							</div>
-						</a>
-						<a href="img/work/big_img6.jpg" class="item photography applications">
-							<img src="img/link/img6.jpg" alt="img6">
-							<div class="ba-work-overlay">
-								<div class="ba-work-overlay--middle">
-									<img src="img/work/link.png" alt="link">
+							</a>
+						</div>
+						<div class="ba-work-item photography applications">
+							<a href="img/work/big_img6.jpg" class="swipebox">
+								<img src="img/link/img6.jpg" alt="img6">
+								<div class="ba-work-overlay">
+									<div class="ba-work-overlay--middle">
+										<img src="img/work/link.png" alt="link">
+									</div>
 								</div>
-							</div>
-						</a>
-						<a href="img/work/big_img7.jpg" class="item web">
-							<img src="img/link/img7.jpg" alt="img7">
-							<div class="ba-work-overlay">
-								<div class="ba-work-overlay--middle">
-									<img src="img/work/link.png" alt="link">
+							</a>
+						</div>
+						<div class="ba-work-item web">
+							<a href="img/work/big_img7.jpg" class="swipebox">
+								<img src="img/link/img7.jpg" alt="img7">
+								<div class="ba-work-overlay">
+									<div class="ba-work-overlay--middle">
+										<img src="img/work/link.png" alt="link">
+									</div>
 								</div>
-							</div>
-						</a>
-						<a href="img/work/big_img8.jpg" class="item applications">
-							<img src="img/link/img8.jpg" alt="img8">
-							<div class="ba-work-overlay">
-								<div class="ba-work-overlay--middle">
-									<img src="img/work/link.png" alt="link">
+							</a>
+						</div>
+						<div class="ba-work-item applications">
+							<a href="img/work/big_img8.jpg" class="swipebox">
+								<img src="img/link/img8.jpg" alt="img8">
+								<div class="ba-work-overlay">
+									<div class="ba-work-overlay--middle">
+										<img src="img/work/link.png" alt="link">
+									</div>
 								</div>
-							</div>
-						</a>
-						<a href="img/work/big_img9.jpg" class="item web">
-							<img src="img/link/img9.jpg" alt="img9">
-							<div class="ba-work-overlay">
-								<div class="ba-work-overlay--middle">
-									<img src="img/work/link.png" alt="link">
+							</a>
+						</div>
+						<div class="ba-work-item web">
+							<a href="img/work/big_img9.jpg" class="swipebox">
+								<img src="img/link/img9.jpg" alt="img9">
+								<div class="ba-work-overlay">
+									<div class="ba-work-overlay--middle">
+										<img src="img/work/link.png" alt="link">
+									</div>
 								</div>
-							</div>
-						</a>
+							</a>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -216,17 +233,17 @@
 						<ul class="ba-footer-menu">
 							<li><a href="index.html">home</a></li>
 							<li><a href="about.html">about</a></li>
-							<li><a href="work.html">work</a></li>
+							<li><a href="work.html" class="active">work</a></li>
 							<li><a href="contact.html">contact</a></li>
 						</ul>
 					</div>
 				</div>
 			</section>
 		</footer>
-		<script src="jquery.min.js"></script>
-		<script src="isotope.pkgd.min.js"></script>
 		<script src="js/jquery-1.11.3.min.js"></script>
-		<script src="js/slick.js"></script>
-		<script src="js/main.js"></script>
+		<script src="js/isotope.pkgd.js"></script>
+		<script src="js/work.js"></script>
+		<script src="js/jquery.swipebox.js"></script>
+		<script src="js/swipebox.js"></script>
 	</body>
 	</html>

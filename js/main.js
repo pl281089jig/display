@@ -1,23 +1,23 @@
 ;(function($){
 		$('.ba-slider').slick({ /*глвный слайдер*/
 			dots:false, /*точки убрать*/
-			arrows: false, /*кнопки вкл*/
-			});
-
-		$('.ba-portfolio-slider').slick({
+			arrows: false, /*кнопки выкл*/
+});
+		 $('.ba-portfolio-slider__title').slick({ /*name of slider*/
+				  slidesToShow: 1,
+				  slidesToScroll: 1,
+				  arrows: true,
+				  fade: true, /*способ смены слайда (просто меняется текст)*/
+				  asNavFor: '.ba-portfolio-slider__slides' /*связать с другим слайдером*/
+});
+		$('.ba-portfolio-slider__slides').slick({
 			  slidesToShow: 3,
 			  slidesToScroll: 1,
 			  asNavFor: '.ba-portfolio-slider__title',
-			  dots: true,
+			  dots: false,
 			  centerMode: true,
-			  focusOnSelect: true
-});
-		 $('.ba-portfolio-slider__title').slick({
-		  slidesToShow: 1,
-		  slidesToScroll: 1,
-		  arrows: false,
-		  fade: true,
-		  asNavFor: '.ba-portfolio-slider'
+			  focusOnSelect: true,
+			  arrows:false,
 });
 
 
@@ -25,16 +25,16 @@
 		var $mapDiv = $('#map')[0];
 		var $map = new google.maps.Map($mapDiv, {
 			center: {lat: 52.133214, lng: -106.670046},
-			zoom: 15
+			zoom: 8,
 		});
 
 		var $marker = new google.maps.Marker({
 			position: {lat: 52.133214, lng: -106.670046},
 			map: $map,
-			icon:'img/contact/marker.svg'
+			icon:'img/contact/marker.png'
 		});
 
-		$infowindow.open($map, $marker);
 	})
+
 })(jQuery);
 
