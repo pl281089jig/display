@@ -92,15 +92,17 @@
 					</ul>
 				</div>
 			</div>
-			<nav>
-				<div class="ba-float-left">
-					<ul class="ba-menu">
-						<li><a href="index.html">home</a></li>
-						<li><a href="about.html">about</a></li>
-						<li><a href="work.html" class="active">work</a></li>
-						<li><a href="contact.html">contact</a></li>
-					</ul>
-				</div>
+			<nav class="ba-float-left">
+				<button class="ba-toggle">
+					<span class="ba-toggle__icon"></span>
+				</button>
+				<div class="ba-overlay"></div>
+				<ul class="ba-menu">
+					<li><a href="index.html">home</a></li>
+					<li><a href="about.html">about</a></li>
+					<li><a href="work.html" class="active">work</a></li>
+					<li><a href="contact.html">contact</a></li>
+				</ul>
 			</nav>
 		</header>
 		<main>
@@ -111,13 +113,13 @@
 			</section>
 			<section class="ba-work">
 				<div class="ba-container">
-						<div class="button-group">
-							<button class="button is-checked" data-filter="*">All</button>
-							<button class="button" data-filter=".print">Print</button>
-							<button class="button" data-filter=".photography">Photography</button>
-							<button class="button" data-filter=".web">Web</button>
-							<button class="button" data-filter=".applications">Applications</button>
-						</div>
+					<div class="button-group">
+						<button class="button is-checked" data-filter="*">All</button>
+						<button class="button" data-filter=".print">Print</button>
+						<button class="button" data-filter=".photography">Photography</button>
+						<button class="button" data-filter=".web">Web</button>
+						<button class="button" data-filter=".applications">Applications</button>
+					</div>
 					<div class="ba-work-filter__img cf">
 						<div class="ba-work-item web">
 							<a href="img/work/big_img1.jpg" class="swipebox">
@@ -245,5 +247,6 @@
 		<script src="js/work.js"></script>
 		<script src="js/jquery.swipebox.js"></script>
 		<script src="js/swipebox.js"></script>
+		<script src="js/responsive.js"></script>
 	</body>
 	</html>

@@ -126,24 +126,24 @@ textarea {
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
+@media (min-width: 960px){
+		.ba-menu {
+		 	list-style:none;
+		 	margin: 0;
+		 	padding: 0;
+		 	padding-top: 30px;
+		}
 
-.ba-menu {
- 	list-style:none;
- 	margin: 0;
- 	padding: 0;
- 	padding-top: 30px;
+		.ba-menu li{
+		 	float:left;
+		 	padding-right: 30px;
+		}
+
+		.ba-header__upper {
+			border-bottom: 1px solid #DADADA;
+			padding-bottom: 30px;
+		}
 }
-
-.ba-menu li{
- 	float:left;
- 	padding-right: 30px;
-}
-
-.ba-header__upper {
-	border-bottom: 1px solid #DADADA;
-	padding-bottom: 30px;
-}
-
 /*social*/
 
 .ba-social__link {
@@ -620,4 +620,120 @@ textarea {
 .ba-portfolio__link:hover .ba-portfolio__overlay{
 	visibility: visible;
 	opacity: 1;
+}
+
+/*RESPONSIVE MENU*/
+
+@media (max-width:959px)
+{
+	.ba-menu{
+		position: fixed;
+		width: 170px;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		background: #282828;
+		z-index: 10;
+		list-style: none;
+		padding:0;
+	    margin: 0;
+	    opacity:.9;
+	    transform: translateX(0%);
+	}
+
+	.ba-menu a {
+		padding: 10px;
+		display: block;
+	}
+
+	.ba-menu a:hover {
+		color: #2ECC71;
+	}
+
+	.ba-menu li {
+	    float: none;
+	    border-bottom: 1px solid rgba(255,255,255, .1);
+	    padding: 10px;
+	}
+
+	.ba-social{
+		display: none;
+	}
+
+	.ba-header {
+		background: none;
+	}
+
+	.ba-overlay {
+		position: fixed;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		background: #FFF;
+		opacity: 0;
+		z-index:2;
+		visibility:hidden;
+	}
+
+	body {
+		transition: transform .4s;
+	}
+
+	.ba-menu-open {
+		transform:translateX(-170px);
+		overflow:hidden;
+		position: fixed;
+	}
+
+	.ba-menu-open .ba-overlay {
+		visibility:visible;
+		opacity: .4;
+	}
+}
+
+.ba-toggle{
+	 border: none;
+	 outline: none;
+	 line-height: 0;
+	 width: 30px;
+	 background: none;
+	 min-height: 0;
+	 padding: 0;
+	 margin-top: 35px;
+}
+@media (min-width: 960px) {
+	  .ba-toggle{
+	   display: none;
+	  }
+}
+
+.ba-toggle:hover{
+ 	background: none;
+}
+.ba-toggle__icon{
+	 margin: 10px 0;
+	 display: block;
+	 height: 4px;
+	 width: 100%;
+	 background: #FFF;
+	 position: relative;
+	 transition: background 0s .4s;
+}
+
+.ba-toggle__icon:before,
+.ba-toggle__icon:after{
+	 content: "";
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 height: 100%;
+	 width: 100%;
+	 background: #fff;
+}
+.ba-toggle__icon:before{
+ 	transform: translateY(-10px);
+}
+.ba-toggle__icon:after{
+	 transform: translateY(10px);
 }
