@@ -467,38 +467,6 @@ textarea {
 
 }
 
-.ba-work-overlay {
-	position: absolute;
-	left: 0;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	z-index: 1;
-	color: #FFF;
-	background-color: rgba(255, 255, 255, .5);
-	visibility: hidden;
-	opacity: 0;
-	transition: opacity .3s, visibility .3s;
-}
-
-.ba-work-overlay img {
-	margin-left: 35%;
-	margin-top: 20%;
-}
-
-.item {
-	position: relative;
-	overflow: hidden;
-}
-.item:hover .ba-work-overlay {
-	visibility: visible;
-	opacity: 1;
-}
-
-.ba-work-overlay--middle{
-	vertical-align: middle;
-}
-
 /*CONTACT*/
 
 .ba-map {
