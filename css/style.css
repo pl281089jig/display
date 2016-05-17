@@ -42,7 +42,10 @@ button{
 	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
 	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
 	text-transform:uppercase;
-	    color: #737373;
+
+}
+.ba-menu a {
+		color: #737373;
 	    font-size: 18px;
 		font-weight: 600;
 		line-height: 1;
@@ -51,6 +54,9 @@ button{
 		text-decoration: none;
 }
 
+.ba-menu a.active{
+	color: #2ecc71;
+}
 a:hover {
 	color: #2ecc71;
 }
@@ -197,12 +203,16 @@ textarea {
 }
 
 .ba-slider{
-	position: absolute;
+	position: relative;
 	top: 120px;
 }
 
 .ba-section-slider__slide {
 	outline: none;
+}
+.ba-section-slider__slide img {
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /*CALLOUT1*/
@@ -279,6 +289,7 @@ textarea {
 	line-height: 1.5;
 	position: relative;
 	display: block;
+	text-decoration: none;
 }
 
 .ba-footer-menu a:hover {
@@ -360,6 +371,7 @@ textarea {
 	text-align: center;
 	fill:#737373;
 	padding: 134px 0 50px;
+	text-decoration: none;
 }
 
 .ba-section-services__kind h2 {
@@ -427,6 +439,8 @@ textarea {
 	color: #2ecc71;
 }
 
+
+
 /*CONTENT SLESH*/
 .button-group button:after {
 	content:'';
@@ -464,7 +478,6 @@ textarea {
 	float: left;
 	padding: 5px;
 	display: block;
-
 }
 
 /*CONTACT*/
@@ -525,6 +538,8 @@ textarea {
 
 .ba-portfolio-slider__slides a{
 	outline: none;
+	display: block;
+	margin: 0 10px;
 }
 
 .ba-portfolio-slider__txt {
@@ -577,7 +592,7 @@ textarea {
 	right: 0;
 	z-index: 1;
 	color: #FFF;
-	background-color: rgba(72,191,114, .8);
+	background-color: rgba(255,255,255, .6);
 	visibility: hidden;
 	opacity: 0;
 	transition: opacity .3s, visibility .3s;
@@ -606,7 +621,7 @@ textarea {
 		padding:0;
 	    margin: 0;
 	    opacity:.9;
-	    transform: translateX(0%);
+	    transform: translateX(100%);
 	}
 
 	.ba-menu a {
@@ -651,7 +666,7 @@ textarea {
 	.ba-menu-open {
 		transform:translateX(-170px);
 		overflow:hidden;
-		position: fixed;
+
 	}
 
 	.ba-menu-open .ba-overlay {
@@ -684,7 +699,7 @@ textarea {
 	 display: block;
 	 height: 4px;
 	 width: 100%;
-	 background: #FFF;
+	 background: #000;
 	 position: relative;
 	 transition: background 0s .4s;
 }
@@ -697,7 +712,7 @@ textarea {
 	 left: 0;
 	 height: 100%;
 	 width: 100%;
-	 background: #fff;
+	 background: #000;
 }
 .ba-toggle__icon:before{
  	transform: translateY(-10px);

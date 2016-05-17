@@ -11,8 +11,9 @@
 				  asNavFor: '.ba-portfolio-slider__slides' /*связать с другим слайдером*/
 });
 		$('.ba-portfolio-slider__slides').slick({
-			  slidesToShow: 3,
+			  // slidesToShow: 3,
 			  slidesToScroll: 1,
+			  variableWidth:true,
 			  asNavFor: '.ba-portfolio-slider__title',
 			  dots: false,
 			  centerMode: true,
